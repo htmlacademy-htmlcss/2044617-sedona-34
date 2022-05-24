@@ -74,6 +74,87 @@
               </li>
           </ul>
       </header>
+      <section class="catalog-hotel">
+        <h2 class="visually-hidden">
+            Список с фильтрами для гостиниц
+        </h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">
+                    Инфраструктура:
+                </legend>
+                <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                            Бассейн
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="parking-place" checked>
+                            Парковка
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="wi-fi">
+                            Wi-Fi
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">
+                    Тип жилья:
+                </legend>
+                <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                            Гостиница
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="radio" name="type-of-housing" value="motel">
+                            Мотель
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="radio" name="type-of-housing" value="apartments">
+                            Апартаменты
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">
+                    Стоимость, Р:
+                </legend>
+                <label class="control">
+                    <span>
+                        от
+                    </span>
+                    <input class="control-input" type="number" name="cost" value="0">
+                </label>
+                <label class="control">
+                    <span>
+                        до
+                    </span>
+                    <input class="control-input" type="number" name="cost" value="9000">
+                </label>
+                <!--полоса прокрутки цены-->
+            </fieldset>
+            <button class="button button-blue" type="submit">
+                Применить
+            </button>
+            <label class="reset">
+                <input type="reset" class="control-input" name="reset">
+            </label>
+        </form>
+    </section>
 
     </main>
     <footer class="page-footer">
