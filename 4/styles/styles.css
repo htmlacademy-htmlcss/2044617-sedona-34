@@ -9,7 +9,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
@@ -21,8 +21,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000;
-  background-color: #f8bc8b;
-  text-align: center;
+  background-color: #fff;
   margin: 0;
 }
 
@@ -57,6 +56,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: #FFFFFF;
   cursor: pointer;
   text-transform: uppercase;
@@ -86,7 +86,10 @@ body {
   background-image: url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  text-align: center;
 }
+
+
 
 .sedona-title {
   color: #000;
@@ -95,11 +98,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .sedona-reasons {
   color: #333333;
   background-color: #fff;
+  text-align: center;
 }
 
 /* advantages */
@@ -113,16 +118,19 @@ background-color: #fff;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-number {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
 .advantages-item-city {
@@ -194,6 +202,7 @@ background-color: #fff;
 .hotel-search {
   color: #000;
   background-color: #fff;
+  text-align: center;
 }
 
 .hotel-search-title {
@@ -201,11 +210,13 @@ background-color: #fff;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hotel-search-description {
   color: #333333;
   background-color: #fff;
+  text-align: center;
 }
 
 .hotel-search-link {
@@ -219,6 +230,7 @@ background-color: #fff;
   background-image: url(../images/footer-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  text-align: center;
 }
 
 .subscription-title {
@@ -226,6 +238,11 @@ background-color: #fff;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.newsletter-form {
+  text-align: center;
 }
 
 .phone-number {
@@ -234,9 +251,12 @@ background-color: #fff;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  text-transform: uppercase;
   color: #000;
   background-color: #fff;
+}
+
+.footer-phone-number {
+  text-align: center;
 }
 
 /* catalog.html */
@@ -351,6 +371,11 @@ background-color: #fff;
 
 .pagination {
   background-color: #fff;
+}
+
+.pagination-link {
+  text-decoration: none;
+  text-align: center;
 }
 
 .pagination-current {
