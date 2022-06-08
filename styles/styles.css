@@ -66,7 +66,7 @@ body {
   background-color: #fff;
 }
 
-.navigation-user {
+.user-menu-container {
   margin-left: auto;
   width: 264px;
 }
@@ -344,6 +344,10 @@ body {
 /* inner-header */
 
 .background-sorting {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
   background-image: url(../images/catalog/main-header-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -403,6 +407,10 @@ body {
 /* catalog-sorting */
 
 .catalog-sorting {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+
   background-color: #fff;
 }
 
@@ -450,6 +458,20 @@ body {
 
 .pagination {
   background-color: #fff;
+  display: flex;
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.pagination-list {
+  display: flex;
+  width: 400px;
+  margin-left: 73px;
+  justify-content:space-between ;
+}
+
+.pagination-item {
+  width: 60px;
 }
 
 .pagination-link {

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="header-container page-header">
     <a class="navigation-logo" href="index.html">
       <img class="page-header-logo" src="images/header-logo.svg" width="139" height="70" alt="Логотип Седона.">
     </a>
@@ -25,32 +25,34 @@
         </li>
       </ul>
     </nav>
-    <ul class="user-list user-menu">
-      <li class="user-item">
-        <a class="user-link" href="#">
-          <span class="visually-hidden">
-            Поиск
-          </span>
-        </a>
-      </li>
-      <li class="user-item">
-        <a class="user-link" href="#">
-          <span class="visually-hidden">
-            Избранное
-          </span>
-          <span class="visually-hidden numbers">
-            Количество лайков
-          </span>
-        </a>
-      </li>
-      <li class="user-item">
-        <a class="user-link button button-second button-classic" href="#">
-          ХОЧУ СЮДА!
-        </a>
-      </li>
-    </ul>
+    <div class="user-menu-container">
+      <ul class="user-list user-menu">
+        <li class="user-item">
+          <a class="user-link" href="#">
+            <span class="visually-hidden">
+              Поиск
+            </span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="user-link" href="#">
+            <span class="visually-hidden">
+              Избранное
+            </span>
+            <span class="visually-hidden numbers">
+              Количество лайков
+            </span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="user-link button button-second button-classic" href="#">
+            ХОЧУ СЮДА!
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
-  <main class="main-inner">
+  <main class="main-container main-inner">
     <div class="background-sorting">
       <header class="inner-header">
         <h1 class="inner-header-title">
@@ -340,44 +342,47 @@
         </button>
       </form>
     </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">
-        Социальные сети
-      </h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="button button-vk" href="https://vk.com/htmlacademy">
-            <img class="logo-vk" src="images/vk-icon.svg" width="24" height="14" alt="группа в Вконтакте">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="button button-telegram" href="https://t.me/htmlacademy">
-            <img class="logo-telegram" src="images/telegram-icon.svg" width="18" height="15" alt="Телеграм канал">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <img class="logo-youtube" src="images/youtube-icon.svg" width="22" height="17" alt="Канал на Ютуб">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer-phone">
-      <h2 class="visually-hidden">
-        Телефонный номер
-      </h2>
-      <address class="footer-phone-number">
-        <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-    </section>
-    <section class="footer-link">
-      <h2>
-        ссылка создателя
-      </h2>
-      <a class="visually-hidden" href="https://htmlacademy.ru/">.html academy
-        <img class="creator-link" src="images/HTML-Academy.svg" width="115" height="33" alt="Ссылка на сайт создателя">
-      </a>
-    </section>
+    <div class="contacts-container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="button button-vk" href="https://vk.com/htmlacademy">
+              <img class="logo-vk" src="images/vk-icon.svg" width="24" height="14" alt="группа в Вконтакте">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button button-telegram" href="https://t.me/htmlacademy">
+              <img class="logo-telegram" src="images/telegram-icon.svg" width="18" height="15" alt="Телеграм канал">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="logo-youtube" src="images/youtube-icon.svg" width="22" height="17" alt="Канал на Ютуб">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-phone">
+        <h2 class="visually-hidden">
+          Телефонный номер
+        </h2>
+        <address class="footer-phone-number">
+          <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+      </section>
+      <section class="footer-link">
+        <h2>
+          ссылка создателя
+        </h2>
+        <a class="visually-hidden" href="https://htmlacademy.ru/">.html academy
+          <img class="creator-link" src="images/HTML-Academy.svg" width="115" height="33"
+            alt="Ссылка на сайт создателя">
+        </a>
+      </section>
+    </div>
   </footer>
 </body>
 
