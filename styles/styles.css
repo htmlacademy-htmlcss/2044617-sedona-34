@@ -78,6 +78,8 @@ body {
   padding: 0;
   margin-left: 70px;
   width: 140px;
+  margin-bottom: -5px;
+  z-index: 1;
 }
 
 .logo {
@@ -180,14 +182,18 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-}
-
+ }
 
 .main-welcome {
   background-image: url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
+}
+
+.main-welcome-logo {
+  display: block;
+  padding: 52px 372px 82px;
 }
 
 .sedona-title {
