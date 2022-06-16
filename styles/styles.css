@@ -197,6 +197,10 @@ body {
 }
 
 .sedona-title {
+  display: block;
+  width: 620px;
+  margin: 64px auto 32px;
+  padding: 0;
   color: #000;
   background-color: #fff;
   font-weight: 700;
@@ -207,6 +211,10 @@ body {
 }
 
 .sedona-reasons {
+  display: block;
+  width: 654px;
+  margin: 0 auto 90px;
+  padding: 0;
   color: #333333;
   background-color: #fff;
   text-align: center;
@@ -222,7 +230,14 @@ body {
   margin: 0 auto;
 }
 
+.advantages-main-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .advantages-list {
+  list-style-type: none;
   background-color: #fff;
 }
 
@@ -313,12 +328,21 @@ body {
 /* hotel-search */
 
 .hotel-search {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
   color: #000;
   background-color: #fff;
   text-align: center;
 }
 
 .hotel-search-title {
+  display: block;
+  width: 298px;
+  padding: 0;
+  margin: 90px auto 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -327,12 +351,19 @@ body {
 }
 
 .hotel-search-description {
+  display: block;
+  width: 592px;
+  margin: 0 auto 56px;
+  padding: 0;
   color: #333333;
   background-color: #fff;
   text-align: center;
 }
 
 .hotel-search-link {
+  width: 574px;
+  padding: 12px 16px;
+  margin: 0 auto 92px;
   text-decoration: none;
 }
 
@@ -346,30 +377,15 @@ body {
   padding: 0;
 }
 
-.contacts-container {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-}
-
-.footer-social {
-  width: 150;
-  margin-left: 70px;
-}
-
-.footer-phone {
-  margin-left: 40px;
-  width: 720px;
-}
-
-.footer-link {
-  margin-right: 70px;
-  margin-left: auto;
-  width: 115px;
-}
+/* subscription */
 
 .footer-subscription {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
   color: #fff;
   background-image: url(../images/footer-background.jpg);
   background-repeat: no-repeat;
@@ -378,6 +394,10 @@ body {
 }
 
 .subscription-title {
+  display: block;
+  width: 404px;
+  padding: 0;
+  margin: 94px auto 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -385,8 +405,64 @@ body {
   text-align: center;
 }
 
-.newsletter-form {
+.subscription-description {
+  display: block;
+  width: 476px;
+  padding: 0;
+  margin: 0 auto 46px;
   text-align: center;
+}
+
+.newsletter-form {
+  width: 800px;
+  margin: 0 auto 94px;
+  text-align: center;
+}
+
+/* social */
+
+.social-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  padding: 0;
+  margin: 40px 70px 30px;
+}
+
+.footer-social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 142px;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.social-item {
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.footer-phone {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 720px;
+}
+
+.footer-link {
+  display: block;
+  padding: 0;
+  margin: 8px 0;
+  width: 115px;
 }
 
 .phone-number {
@@ -401,6 +477,12 @@ body {
 
 .footer-phone-number {
   text-align: center;
+}
+
+.creator-link{
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* catalog.html */
