@@ -543,6 +543,10 @@ body {
   margin: 0;
 }
 
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .breadcrumbs-link {
   display: block;
   margin: 0;
@@ -553,17 +557,25 @@ body {
 
 /* catalog-filter */
 
-.catalog-filter .catalog-filter-container {
+.catalog-filter {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-hotel .catalog-filter-title {
+  display: block;
+  margin: 0;
+  padding: 0;
   color: #fff;
   font-weight: 700;
   font-style: 20px;
   text-transform: capitalize;
+}
+
+.catalog-filter-group:not(:nth-child(2)) {
+  margin-right: 70px;
 }
 
 .catalog-filter-item {
