@@ -494,7 +494,6 @@ body {
 .sorting-container {
   display: flex;
   flex-direction: column;
-  width: 1200px;
   margin: 0 auto;
   padding: 35px 70px 70px;
   background-image: url(../images/catalog/main-header-background.jpg);
@@ -564,6 +563,13 @@ body {
   padding: 0;
 }
 
+.catalog-filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
 .catalog-hotel .catalog-filter-title {
   display: block;
   margin: 0;
@@ -599,24 +605,59 @@ body {
 
 /* catalog-sorting */
 
+.catalog {
+  background-color: #fff;
+}
+
 .catalog-sorting {
   display: flex;
   width: 1057px;
-  margin: 0 auto;
-
+  margin-left: 72px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 56px;
+  padding: 0;
   background-color: #fff;
 }
 
 .catalog-sorting-text {
+  display: block;
+  width: 338px;
+  margin-top: 8px;
+  margin-left: 0;
+  margin-right: 192px;
+  margin-bottom: 5px;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
-.catalog {
-  background-color: #fff;
+.select-control {
+  display: block;
+  width: 290px;
+
 }
+
+.button-view {
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.buttons-views {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-left: 78px;
+}
+
+
 
 .hotel-card-title {
   text-transform: uppercase;
@@ -654,17 +695,27 @@ body {
   display: flex;
   width: 1056px;
   margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 96px;
+  padding: 0;
 }
 
 .pagination-list {
   display: flex;
+  margin: 0;
+  margin-right: 270px;
+  padding: 0;
   width: 400px;
-  margin-left: 73px;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .pagination-item {
+  display: block;
   width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link {
@@ -672,13 +723,35 @@ body {
   text-align: center;
 }
 
+.pagination-list .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
 .pagination-current {
+  display: block;
+  margin: 0;
+  padding: 0;
   background-color: #F2F2F2;
   color: #000;
 }
 
 .hotels-per-page {
+  display: block;
+  width: 175px;
+  margin: 0 20px 51px 18px;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333;
+}
+
+.view-option {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 160px;
 }
