@@ -237,11 +237,26 @@ body {
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   background-color: #fff;
 }
 
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -250,23 +265,34 @@ body {
 }
 
 .advantages-number {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
 .advantages-description {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
 .advantages-item-city {
+  grid-column: 1/2;
+  padding: 92px 85px;
   color: #fff;
   background-color: #82B3D3;
 }
 
 .advantages-item-housing {
+  grid-column: 1/2;
+  padding: 80px 85px;
   color: #000;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -276,6 +302,8 @@ body {
 }
 
 .advantages-item-food {
+  padding: 80px 85px;
+  grid-column: 2/3;
   color: #000;
   background-color: #fff;
 }
@@ -285,6 +313,8 @@ body {
 }
 
 .advantages-item-price {
+  grid-column: 3/4;
+  padding: 80px 85px;
   color: #000;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -293,12 +323,19 @@ body {
   color: #333;
 }
 
+
 .advantages-item-bridge {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  padding: 92px 85px;
   color: #fff;
   background-color: #82B3D3;
 }
 
 .advantages-item-square {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  padding: 80px 85px;
   color: #000;
   background: rgba(131, 179, 211, 0.12);
 }
@@ -308,6 +345,9 @@ body {
 }
 
 .advantages-item-road {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  padding: 80px 85px;
   color: #000;
   background: rgba(131, 179, 211, 0.2);
 }
@@ -317,6 +357,9 @@ body {
 }
 
 .advantages-item-tourists {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  padding: 80px 85px;
   color: #000;
   background-color: rgba(131, 179, 211, 0.12);
 }
