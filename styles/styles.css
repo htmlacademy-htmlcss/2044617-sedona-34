@@ -228,6 +228,7 @@ body {
   background-color: #756157;
 }
 
+
 .button-special {
   background-color: #82B3D3;
 }
@@ -577,46 +578,52 @@ body {
 
 .social-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 1060px;
-  padding: 0;
+  padding: 5px 0;
   margin: 40px 70px 30px;
 }
 
 .footer-social {
   display: flex;
-  margin: 0;
+  margin:  0;
   padding: 0;
+  width: 142px;
 }
 
 .social-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: space-between;
-  width: 142px;
   padding: 0;
-  margin: 5px 0;
+  margin: 0;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #83B3D3;
 }
 
 .social-item {
-  display: block;
-  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 40px;
+  padding: 0;
   margin: 0;
 }
 
 .footer-phone {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
   width: 720px;
-}
-
-.footer-link {
-  display: block;
-  padding: 0;
-  margin: 8px 0;
-  width: 115px;
 }
 
 .phone-number {
@@ -631,6 +638,15 @@ body {
 
 .footer-phone-number {
   text-align: center;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 0;
+  margin: 0;
+  width: 115px;
 }
 
 .creator-link {
