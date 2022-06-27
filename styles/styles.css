@@ -662,7 +662,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #83B3D3;
 }
 
 .social-item {
@@ -673,6 +672,22 @@ body {
   height: 40px;
   padding: 0;
   margin: 0;
+}
+
+.social-icon {
+  fill: #83B3D3;
+}
+
+.social-icon:hover {
+  fill: #68A2CA;
+}
+
+.social-icon:focus {
+  fill: #68A2CA;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);;
 }
 
 .footer-phone {
@@ -694,6 +709,18 @@ body {
   background-color: #fff;
 }
 
+.phone-number:hover {
+  color: #756157;
+}
+
+.phone-number:focus {
+  color: #756157 ;
+}
+
+.phone-number:active {
+  color: rgba(117, 97, 87, 0.3);;
+}
+
 .footer-phone-number {
   text-align: center;
 }
@@ -711,6 +738,22 @@ body {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+.creator-icon {
+  fill: #000000;
+}
+
+.creator-icon:hover {
+  fill: #756157;
+}
+
+.creator-icon:focus {
+  fill: #756157;
+}
+
+.creator-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* catalog.html */
