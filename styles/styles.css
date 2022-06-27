@@ -228,13 +228,71 @@ body {
   background-color: #756157;
 }
 
+.button-classic:hover {
+  background-color: #615048;
+  color: #FFFFFF;
+}
+
+.button-classic:focus {
+  background-color: #615048;
+  color: #FFFFFF;
+}
+
+.button-classic:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-classic:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
 
 .button-special {
   background-color: #82B3D3;
 }
+.button-special:hover {
+  background-color:#68A2CA;
+  color: #FFFFFF;
+}
+
+.button-special:focus {
+  background-color: #68A2CA;
+  color: #FFFFFF;
+}
+
+.button-special:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-special:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
 
 .button-selected {
   background-color: #7DB54F;
+}
+
+.button-selected:focus {
+  background-color: #6C9E42;
+  color: #FFFFFF;
+}
+
+.button-selected:hover {
+  background-color: #6C9E42;
+  color: #FFFFFF;
+}
+
+.button-selected:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);;
+}
+
+.button-selected:disabled {
+  background-color: #E5E5E5;
+  color: #E5E5E5;
 }
 
 .button-second {
