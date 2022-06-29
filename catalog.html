@@ -61,10 +61,10 @@
           <ol class="breadcrumbs-list">
             <li class="breadcrumbs-item-main">
               <a class="breadcrumbs-link" href="index.html">
-                <svg class="breadcrumbs-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <svg class="breadcrumbs-icon" width="13" height="13" viewBox="0 0 13 13"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z"
-                     />
+                    d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" />
                 </svg>
                 <span class="visually-hidden">
                   Главная
@@ -83,57 +83,59 @@
             Список с фильтрами для гостиниц
           </h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group-system">
-              <legend class="catalog-filter-title">
-                Инфраструктура:
-              </legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                    Бассейн
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="parking-place" checked>
-                    Парковка
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                    Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter-group-type-housing">
-              <legend class="catalog-filter-title">
-                Тип жилья:
-              </legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                    Гостиница
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                    Мотель
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog-filter-group-price">
+            <div class="catalog-filter-container">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">
+                  Инфраструктура:
+                </legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking-place" checked>
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">
+                  Тип жилья:
+                </legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="type-of-housing" value="motel">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">
                 Стоимость, Р:
               </legend>
@@ -151,12 +153,14 @@
               </label>
               <!--полоса прокрутки цены-->
             </fieldset>
-            <button class=" button button-special" type="submit">
-              Применить
-            </button>
-            <label class="reset">
-              <input type="reset" class="control-input" name="reset">
-            </label>
+            <div class="buttons-filter-container">
+              <button class="button-filter button button-special" type="submit">
+                Применить
+              </button>
+              <label class="reset">
+                <input type="reset" class="control-input-reset" name="reset">
+              </label>
+            </div>
           </form>
         </section>
       </div>
@@ -173,17 +177,39 @@
           <option value="expensive">Сначала дорогое</option>
         </select>
         <div class="buttons-views">
-          <a class="button button-view" href="#">
+          <a class="button-view-current" href="#">
+            <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 0H0V6H4V0Z"  />
+              <path d="M16 0H12V6H16V0Z"  />
+              <path d="M10 0H6V6H10V0Z"  />
+              <path d="M4 8H0V14H4V8Z"  />
+              <path d="M16 8H12V14H16V8Z" />
+              <path d="M10 8H6V14H10V8Z"  />
+            </svg>
             <span class="visually-hidden">
               Показывать как карточки
             </span>
           </a>
-          <a class="button button-view" href="#">
+          <a class="button-view" href="#">
+            <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 12H0V14H16V12Z"/>
+              <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z"/>
+            </svg>
             <span class="visually-hidden">
               Показывать в строчку
             </span>
           </a>
-          <a class="button button-view" href="#">
+          <a class="button-view" href="#">
+            <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 0H0V2H2V0Z" />
+              <path d="M16 0H4V2H16V0Z" />
+              <path d="M2 4H0V6H2V4Z" />
+              <path d="M16 4H4V6H16V4Z" />
+              <path d="M2 8H0V10H2V8Z" />
+              <path d="M16 8H4V10H16V8Z" />
+              <path d="M2 12H0V14H2V12Z" />
+              <path d="M16 12H4V14H16V12Z" />
+            </svg>
             <span class="visually-hidden">
               Показывать списком
             </span>
@@ -203,10 +229,10 @@
             </h3>
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-price">от 4000 Р</p>
-            <a href="#" class="button button-classic">
+            <a href="#" class="button button-classic button-card">
               Подробнее
             </a>
-            <button class="button button-special" type="button">
+            <button class="button button-special button-card" type="button">
               В избранное
             </button>
             <span>
@@ -231,10 +257,10 @@
             </h3>
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-price">от 5000 Р</p>
-            <a href="#" class="button button-classic">
+            <a href="#" class="button button-classic button-card">
               Подробнее
             </a>
-            <button class="button button-selected" type="button">
+            <button class="button button-selected button-card" type="button">
               В избранном
             </button>
             <span>
@@ -259,10 +285,10 @@
             </h3>
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-price">от 2500 Р</p>
-            <a href="#" class="button button-classic">
+            <a href="#" class="button button-classic button-card">
               Подробнее
             </a>
-            <button class="button button-special" type="button">
+            <button class="button button-special button-card" type="button">
               В избранное
             </button>
             <span>
@@ -285,10 +311,10 @@
             </h3>
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-price">от 4000 Р</p>
-            <a href="#" class="button button-classic">
+            <a href="#" class="button button-classic button-card">
               Подробнее
             </a>
-            <button class="button button-special" type="button">
+            <button class="button button-special button-card" type="button">
               В избранное
             </button>
             <span>
