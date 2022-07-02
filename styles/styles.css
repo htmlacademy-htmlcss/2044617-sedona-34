@@ -277,7 +277,9 @@ body {
 }
 
 .button-special {
+  font-family: "PT Sans", sans-serif;
   background-color: #82B3D3;
+
 }
 
 .button-special:hover {
@@ -301,6 +303,10 @@ body {
 }
 
 .button-selected {
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   background-color: #7DB54F;
 }
 
@@ -679,22 +685,54 @@ body {
   color: #333333 ;
 }
 
+/* footer-form */
+
 .newsletter-form {
+  display: flex;
   width: 800px;
   margin: 0 auto 94px;
   text-align: center;
 }
 
-/* footer-form */
 .field {
   font: inherit;
+  flex-grow: 1;
+  display: block;
   font-weight: 400;
   margin: 0;
-  width: 600px;
-  padding: 20px auto 20px 22px;
-  border: 0;
+  border: none;
   border-radius: 10px 0 0 10px;
   background-color: #F2F2F2;
+  padding: 20px 22px 20px 22px;
+}
+
+.field::placeholder {
+  opacity: 0.6;
+  color: #000000;
+}
+
+.field:hover {
+  background-color: #E6E6E6;
+  border: none;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  outline:  3px solid #83B3D3;;
+}
+
+.field.field:active {
+  background-color: #FFFFFF;
+  outline: 2px solid #000000;
+  }
+
+.newsletter-button {
+  width: 200px;
+  margin: 0;
+  padding: 12px 15px;
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 0 10px 10px 0;
 }
 
 /* social */
@@ -863,7 +901,7 @@ body {
 
 .breadcrumbs-list {
   display: flex;
-  width: 150px;
+  width: 100%;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -883,6 +921,14 @@ body {
   margin-right: 10px;
 }
 
+.breadcrumbs-item-direction {
+  width: 6px;
+  height: 21px;
+  background-image: url(../images/catalog/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .breadcrumbs-item {
   display: block;
   min-width: 12px;
@@ -890,17 +936,6 @@ body {
   padding: 0;
   margin: 0;
   margin-left: 10px;
-}
-
-.breadcrumbs-item::before {
-  content: "";
-  background-image: url(../images/catalog/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 6px;
-  height: 8px;
-  padding: 0;
-  margin: 0;
 }
 
 .breadcrumbs-icon {
@@ -1189,6 +1224,7 @@ body {
 
 .button-card {
   display: flex;
+  flex-wrap: wrap;
   width: 140px;
   height: 36px;
   align-items: center;
@@ -1197,9 +1233,16 @@ body {
   margin: 0;
 }
 
-.hotel-card-rating-img {
+.hotel-card-rating-stars {
+  display: flex;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: 0;
+}
+
+.hotel-card-rating-img {
+  margin-right: 6px;
 }
 
 .hotel-card-rating-text {
@@ -1242,13 +1285,15 @@ body {
 }
 
 .pagination-list .pagination-link {
-  display: block;
+
+  display: flex;
   text-decoration: none;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
   margin: 0;
-  padding: 12px 21px;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-current {
