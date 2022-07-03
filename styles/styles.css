@@ -1345,10 +1345,47 @@ body {
   line-height: 36px;
 }
 
-.select-control {
-  display: block;
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
   width: 290px;
+}
 
+.select-control {
+  width: 100%;
+  padding: 14px 20px;
+  padding-right: 52px;
+  font: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  appearance: none;
+  background-image: url(../images/catalog/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  color: #333333;
+  outline: none;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .button-view {
@@ -1408,7 +1445,7 @@ body {
   width: 162px;
   padding: 0;
   margin: 0;
-  margin-left: 78px;
+  /* margin-left: 78px; */
   align-items: center;
 }
 
