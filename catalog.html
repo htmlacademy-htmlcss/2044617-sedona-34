@@ -97,20 +97,29 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark-checkbox"></span>
+                      <span class="control-label">
+                        Бассейн
+                      </span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking-place" checked>
-                      Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="parking-place" checked>
+                      <span class="control-mark-checkbox"></span>
+                      <span class="control-label">
+                        Парковка
+                      </span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                      <span class="control-mark-checkbox"></span>
+                      <span class="control-label">
+                        Wi-Fi
+                      </span>
                     </label>
                   </li>
                 </ul>
@@ -122,42 +131,62 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel" checked>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">
+                        Гостиница
+                      </span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="motel">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">
+                        Мотель
+                      </span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                      Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="apartments">
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">
+                        Апартаменты
+                      </span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group-price">
               <legend class="catalog-filter-title">
                 Стоимость, Р:
               </legend>
-              <label class="control">
+              <label class="control-from">
                 <span class="from-to">
                   от
                 </span>
-                <input class="control-input" type="number" name="cost" value="0">
+                <input class="range-input" type="number" name="cost" value="0">
               </label>
-              <label class="control">
+              <label class="control-to">
                 <span class="from-to">
                   до
                 </span>
-                <input class="control-input" type="number" name="cost" value="9000">
+                <input class="range-input" type="number" name="cost" value="9000">
               </label>
-              <!--полоса прокрутки цены-->
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 228px;">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="buttons-filter-container">
               <button class="button-filter button button-special" type="submit">
@@ -185,12 +214,12 @@
         <div class="buttons-views">
           <a class="button-view-current" href="#">
             <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 0H0V6H4V0Z"  />
-              <path d="M16 0H12V6H16V0Z"  />
-              <path d="M10 0H6V6H10V0Z"  />
-              <path d="M4 8H0V14H4V8Z"  />
+              <path d="M4 0H0V6H4V0Z" />
+              <path d="M16 0H12V6H16V0Z" />
+              <path d="M10 0H6V6H10V0Z" />
+              <path d="M4 8H0V14H4V8Z" />
               <path d="M16 8H12V14H16V8Z" />
-              <path d="M10 8H6V14H10V8Z"  />
+              <path d="M10 8H6V14H10V8Z" />
             </svg>
             <span class="visually-hidden">
               Показывать как карточки
@@ -198,8 +227,8 @@
           </a>
           <a class="button-view" href="#">
             <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 12H0V14H16V12Z"/>
-              <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z"/>
+              <path d="M16 12H0V14H16V12Z" />
+              <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
             </svg>
             <span class="visually-hidden">
               Показывать в строчку
