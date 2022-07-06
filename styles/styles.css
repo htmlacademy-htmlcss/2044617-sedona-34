@@ -961,6 +961,10 @@ body {
   fill: #FFFFFF;
 }
 
+.breadcrumbs-link:focus-visible {
+  outline: none;
+}
+
 .breadcrumbs-link:active .breadcrumbs-icon {
   fill: rgba(255, 255, 255, 0.3)
 }
@@ -1601,6 +1605,10 @@ body {
 
 /* Модальное окно */
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1608,7 +1616,8 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.8)
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 
 .modal {
@@ -1617,13 +1626,15 @@ body {
   padding: 70px;
   padding-top: 54px;
   background-color: #FFFFFF;
-  border-radius: 50px;
+  border-radius: 30px;
   offset: 0, 25px rgba(0, 0, 0, 0.15);
 }
 
 .modal-auth {
-  width: 715px;
+  width: 575px;
 }
+
+/* button-close */
 
 .modal-close-button {
   position: absolute;
@@ -1667,4 +1678,318 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+}
+
+/* dates */
+
+.modal-date-container {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-date-group {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-date-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-date-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-decoration: none;
+}
+
+.modal-date-title {
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  align-items: center;
+}
+
+.modal-date-item .control {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-input {
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  width: 420px;
+  height: 50px;
+  background-color: #F2F2F2;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 15px 53px 14px 19px;
+  margin: 0;
+}
+
+.filter-input:hover {
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.filter-input:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.filter-input.filter-input:active {
+  outline: 2px solid #000000;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 11px;
+  right: 19px;
+}
+
+.attention {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+  margin: 0;
+  margin-left: 155px;
+  margin-bottom: 11px;
+  margin-top: 11px;
+}
+
+.attention:last-child {
+  color: #333333;
+}
+
+/* guests */
+
+.modal-guests-container {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-guests-group {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-guests-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.modal-guests-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-right: 56px;
+  display: flex;
+  text-decoration: none;
+}
+
+.modal-guests-item:last-child {
+  margin-right: 0;
+}
+
+.modal-guests-title {
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  margin-right: 64px;
+  padding: 0;
+  align-items: center;
+}
+
+.modal-guests-item:last-child .modal-guests-title {
+  margin-right: 43px;
+  padding-right: 6px;
+}
+
+.modal-guests-item .control {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-guests-item .filter-input {
+  display: flex;
+  width: 133px;
+  padding: 15px 62px 14px 61px;
+}
+
+.modal-guests-item .filter-input::-webkit-outer-spin-button,
+.modal-guests-item .filter-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+ .modal-button {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 13px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.minus {
+  left: 14px;
+}
+
+.plus {
+  right: 14px;
+}
+
+.minus::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+}
+
+.plus::before,
+.plus::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+}
+
+.modal-button:hover::before,
+.modal-button:hover::after {
+  background-color: #000000;
+}
+
+.modal-button:focus::before,
+.modal-button:focus::after {
+  background-color: #000000;
+}
+
+.modal-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-button:active::before,
+.modal-button:active::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-button:active {
+  outline: none;
+}
+
+.plus::after {
+  transform: rotate(90deg);
+  right: 6px;
+}
+
+/* tooltip */
+
+.tooltip {
+  position: absolute;
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  top: 14px;
+  left: 55px;
+}
+
+.tooltip-toggle {
+  border: none;
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/modal-info.svg);
+  background-repeat: no-repeat;
+  background-color: #83B3D3;
+  background-position: center;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-toggle:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.tooltip-text {
+  box-sizing: border-box;
+  width: 256px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 15px 18px 18px 22px;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  right: -115px;
+  display: none;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: " ";
+  background-image: url("../images/modal-vector.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-modal-filter-container .button-filter {
+  width: 100%;
+  height: 60px;
+  padding: 12px 26px;
+  margin-top: 40px;
 }

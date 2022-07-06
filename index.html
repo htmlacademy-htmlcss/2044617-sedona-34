@@ -279,7 +279,7 @@
       </div>
     </footer>
     <div class="modal-container">
-      <div class="modal modal-auth">
+      <div class="modal modal-auth "> <!-- modal-container-close -->
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -287,6 +287,100 @@
           <h2 class="modal-title">
             Поиск гостиницы в Седоне
           </h2>
+          <form class="modal-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="modal-date-container">
+              <fieldset class="modal-date-group">
+                <ul class="modal-date-list">
+                  <li class="modal-date-item">
+                    <legend class="modal-date-title">
+                      Дата заезда:
+                    </legend>
+                    <label class="control">
+                      <span class="calendar-icon">
+                        <img class="calendar" src="./images/calendar-icon.svg" width="15px" height="15px"
+                          alt="Календарь">
+                      </span>
+                      <input class="filter-input" type="text" name="date-begin" value="27 апреля 2020">
+                    </label>
+                  </li>
+                  <span class="attention">
+                    Мы не можем отправить вас в прошлое.
+                  </span>
+                  <li class="modal-date-item">
+                    <legend class="modal-date-title">
+                      Дата выезда:
+                    </legend>
+                    <label class="control">
+                      <span class="calendar-icon">
+                        <img class="calendar" src="./images/calendar-icon.svg" width="15px" height="15px"
+                          alt="Календарь">
+                      </span>
+                      <input class="filter-input" type="text" name="date-end" value="1 сентября 2021">
+                    </label>
+                  </li>
+                </ul>
+                <span class="attention">
+                  На эти даты есть сободные номера. Пока есть.
+                </span>
+              </fieldset>
+            </div>
+            <div class="modal-guests-container">
+              <fieldset class="modal-guests-group">
+                <ul class="modal-guests-list">
+                  <li class="modal-guests-item">
+                    <legend class="modal-guests-title">
+                      Взрослые:
+                    </legend>
+                    <label class="control">
+                      <input class="filter-input" type="number" name="adults" value="2">
+                      <button class="modal-button minus" type="button">
+                        <span class="visually-hidden">
+                          Меньше
+                        </span>
+                      </button>
+                      <button class="modal-button plus" type="button">
+                        <span class="visually-hidden">
+                          Больше
+                        </span>
+                      </button>
+                    </label>
+                  </li>
+                  <li class="modal-guests-item">
+                    <legend class="modal-guests-title">
+                      Дети:
+                    </legend>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <span class="visually-hidden">Дополнительная информация</span>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                        Укажите количество детей, которые
+                        будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
+                    </span>
+                    <label class="control">
+                      <input class="filter-input" type="number" name="children" value="1">
+                      <button class="modal-button minus" type="button">
+                        <span class="visually-hidden">
+                          Меньше
+                        </span>
+                      </button>
+                      <button class="modal-button plus" type="button">
+                        <span class="visually-hidden">
+                          Больше
+                        </span>
+                      </button>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="button-modal-filter-container">
+              <button class="button-filter button button-special" type="submit">
+                Найти
+              </button>
+            </div>
+          </form>
         </section>
       </div>
     </div>
