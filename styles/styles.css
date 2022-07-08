@@ -1166,6 +1166,7 @@ body {
   color: #FFFFFF;
   padding: 14px 18px;
   padding-right: 36px;
+  appearance: textfield;
 }
 
 .control-from .range-input {
@@ -1742,6 +1743,7 @@ body {
   color: rgba(0, 0, 0, 0.6);
   padding: 15px 53px 14px 19px;
   margin: 0;
+  appearance: textfield;
 }
 
 .filter-input:hover {
@@ -1776,7 +1778,7 @@ body {
   margin: 0;
   margin-left: 155px;
   margin-bottom: 11px;
-  margin-top: 11px;
+  margin-top: 8px;
 }
 
 .attention:last-child {
