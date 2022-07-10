@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   </head>
 
   <body>
@@ -35,7 +36,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="user-link" href="#">
+            <a class="user-link user-link-heart" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -116,10 +117,9 @@
               <br>но и настоящего местного <br>производства!
             </p>
           </li>
-          </li>
           <li class="advantages-item advantages-item-bridge">
             <p class="advantages-title">
-              Там есть мост дьявола
+              Там есть <br>мост дьявола
             </p>
             <span class="advantages-number">
               №2
@@ -278,8 +278,9 @@
         </section>
       </div>
     </footer>
-    <div class="modal-container">
-      <div class="modal modal-auth "> <!-- modal-container-close -->
+    <div class="modal-container modal-container-close">
+      <!-- для закрытия модального окна, скопировать: modal-container-close-->
+      <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -303,9 +304,7 @@
                       <input class="filter-input" type="text" name="date-begin" value="27 апреля 2020">
                     </label>
                   </li>
-                  <span class="attention">
-                    Мы не можем отправить вас в прошлое.
-                  </span>
+                  <span class="attention"> Мы не можем отправить вас в прошлое. </span>
                   <li class="modal-date-item">
                     <legend class="modal-date-title">
                       Дата выезда:
