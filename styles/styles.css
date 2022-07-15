@@ -463,6 +463,7 @@ img {
 .advantages-title {
   margin: 0;
   margin-bottom: 30px;
+  max-width: 230px;
   padding: 0;
   display: block;
   font-weight: 700;
@@ -480,6 +481,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  max-width: 230px;
 }
 
 .advantages-description {
@@ -489,20 +491,32 @@ img {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  max-width: 230px;
 }
 
 .advantages-item-city {
-  grid-column: 1/2;
-  padding: 92px 85px;
+  display: flex;
+  margin: 0;
+  grid-column: 1/4;
+  padding: 0;
   color: #ffffff;
   background-color: #82b3d3;
 }
 
 .advantages-item-city::after {
-  position: absolute;
-  transform: translate(315px, -92px);
-  content: url("../images/index/true-city.jpg");
-  height: 384px;
+  content: " ";
+  background-size: cover;
+  height: 100%;
+  background-image: url("../images/index/true-city.jpg");
+  width: 800px;
+}
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  padding: 85px 0;
+  min-width: 400px;
+  align-items: center;
 }
 
 .advantages-item-housing {
