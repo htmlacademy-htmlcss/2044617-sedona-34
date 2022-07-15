@@ -566,18 +566,21 @@ img {
 
 
 .advantages-item-bridge {
+  display: flex;
+  margin: 0;
   grid-row: 3/4;
-  grid-column: 3/4;
-  padding: 92px 85px;
+  grid-column: 1/4;
+  padding: 0;
   color: #ffffff;
   background-color: #82b3d3;
 }
 
 .advantages-item-bridge::before {
-  position: absolute;
-  transform: translate(-885px, -92px);
-  content: url("../images/index/evil-bridge.jpg");
-  height: 384px;
+  content: " ";
+  background-image: url("../images/index/evil-bridge.jpg");
+  height: 100%;
+  background-size: cover;
+  width: 800px;
 }
 
 .advantages-item-square {
@@ -1778,6 +1781,7 @@ img {
   padding: 0;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .modal-date-item {

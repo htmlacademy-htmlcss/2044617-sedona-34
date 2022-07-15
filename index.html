@@ -120,15 +120,17 @@
             </p>
           </li>
           <li class="advantages-item advantages-item-bridge">
-            <p class="advantages-title">
-              Там есть <br>мост дьявола
-            </p>
-            <span class="advantages-number">
-              №2
-            </span>
-            <p class="advantages-description">
-              Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
-            </p>
+            <div class="advantages-container">
+              <p class="advantages-title">
+                Там есть <br>мост дьявола
+              </p>
+              <span class="advantages-number">
+                №2
+              </span>
+              <p class="advantages-description">
+                Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
+              </p>
+            </div>
           </li>
           <li class="advantages-item advantages-item-square">
             <p class="advantages-title">
@@ -280,7 +282,7 @@
         </section>
       </div>
     </footer>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <!-- для закрытия модального окна, скопировать: modal-container-close-->
       <div class="modal modal-auth">
         <button class="modal-close-button">
@@ -295,44 +297,46 @@
               <fieldset class="modal-date-group">
                 <ul class="modal-date-list">
                   <li class="modal-date-item">
-                    <legend class="modal-date-title">
+                    <div class="modal-date-title">
                       Дата заезда:
-                    </legend>
+                    </div>
                     <label class="control">
                       <span class="calendar-icon">
-                        <img class="calendar" src="./images/calendar-icon.svg" width="15px" height="15px"
-                          alt="Календарь">
+                        <img class="calendar" src="./images/calendar-icon.svg" width="15" height="15" alt="Календарь">
                       </span>
                       <input class="filter-input" type="text" name="date-begin" value="27 апреля 2020">
                     </label>
                   </li>
-                  <span class="attention"> Мы не можем отправить вас в прошлое. </span>
+                  <li class="attention">
+                    <span class="attention-direction"> Мы не можем отправить вас в прошлое. </span>
+                  </li>
                   <li class="modal-date-item">
-                    <legend class="modal-date-title">
+                    <div class="modal-date-title">
                       Дата выезда:
-                    </legend>
+                    </div>
                     <label class="control">
                       <span class="calendar-icon">
-                        <img class="calendar" src="./images/calendar-icon.svg" width="15px" height="15px"
-                          alt="Календарь">
+                        <img class="calendar" src="./images/calendar-icon.svg" width="15" height="15" alt="Календарь">
                       </span>
                       <input class="filter-input" type="text" name="date-end" value="1 сентября 2021">
                     </label>
                   </li>
+                  <li class="attention">
+                    <span class="attention-direction">
+                      На эти даты есть сободные номера. Пока есть.
+                    </span>
+                  </li>
                 </ul>
-                <span class="attention">
-                  На эти даты есть сободные номера. Пока есть.
-                </span>
               </fieldset>
             </div>
             <div class="modal-guests-container">
               <fieldset class="modal-guests-group">
                 <ul class="modal-guests-list">
                   <li class="modal-guests-item">
-                    <legend class="modal-guests-title">
+                    <div class="modal-guests-title">
                       Взрослые:
-                    </legend>
-                    <label class="control">
+                    </div>
+                    <div class="control">
                       <input class="filter-input" type="number" name="adults" value="2">
                       <button class="modal-button minus" type="button">
                         <span class="visually-hidden">
@@ -344,12 +348,12 @@
                           Больше
                         </span>
                       </button>
-                    </label>
+                    </div>
                   </li>
                   <li class="modal-guests-item">
-                    <legend class="modal-guests-title">
+                    <div class="modal-guests-title">
                       Дети:
-                    </legend>
+                    </div>
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                         <span class="visually-hidden">Дополнительная информация</span>
@@ -359,7 +363,7 @@
                         будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                       </span>
                     </span>
-                    <label class="control">
+                    <div class="control">
                       <input class="filter-input" type="number" name="children" value="1">
                       <button class="modal-button minus" type="button">
                         <span class="visually-hidden">
@@ -371,7 +375,7 @@
                           Больше
                         </span>
                       </button>
-                    </label>
+                    </div>
                   </li>
                 </ul>
               </fieldset>
