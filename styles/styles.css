@@ -1950,6 +1950,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   padding: 0;
+  background-color: transparent;
 }
 
 .minus {
