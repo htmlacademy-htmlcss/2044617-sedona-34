@@ -569,7 +569,7 @@ img {
   display: flex;
   flex-direction: initial;
   margin: 0;
-  grid-row: 3/4;
+  /* grid-row: 3/4; */
   grid-column: 1/4;
   padding: 0;
   color: #ffffff;
